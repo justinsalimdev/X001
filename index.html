@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Justin Salim">
     <meta name="description" content="My Portfolio">
-    <link rel="icon" href="icon.png">
+    <link rel="icon" href="ChatGPT Image Oct 29, 2025, 12_08_28 AM.png">
     <title>My Portfolio</title>
     <!-- Load Tailwind CSS CDN for JIT compilation -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,9 +21,27 @@
         }
         /* Custom styling to ensure image covers the hero section */
         .hero-background {
-            background-image: url('ChatGPT\ Image\ Oct\ 26\,\ 2025\,\ 02_27_50\ PM.png');
+            background-image: url('/ChatGPT\ Image\ Oct\ 26\,\ 2025\,\ 02_27_50\ PM.png');
             background-size: cover;
             background-position: center;
+        }
+
+        /* Style untuk Skills/Tech Stack */
+        .skill-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 0.25rem;
+            border-radius: 9999px; /* rounded-full */
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 600; /* font-semibold */
+            background-color: #e5e7eb; /* bg-gray-200 */
+            color: #1f2937; /* text-gray-800 */
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        .skill-badge:hover {
+            background-color: #d1d5db; /* bg-gray-300 */
+            transform: translateY(-1px);
         }
     </style>
 </head>
@@ -36,7 +54,7 @@
             
             <!-- Logo/Icon Area -->
             <div class="flex items-center"> <a href="#home"> <img 
-            src="ChatGPT Image Oct 29, 2025, 02_41_13 AM.png" 
+            src="/ChatGPT Image Oct 29, 2025, 02_41_13 AM.png" 
             alt="BAHGYASROTA" 
             class="w-24 h-auto" 
             onerror="this.src='https://placehold.co/120x40/f7fafc/3a009d?text=BAHGYASROTA'"
@@ -90,7 +108,7 @@
             
             <!-- H1: About Me (Styled to match your custom CSS) -->
             <h2 class="text-4xl sm:text-5xl font-extrabold text-center mb-16 text-red-800/80 tracking-wide">
-                About Me
+                A Bit About Me
             </h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
@@ -99,7 +117,7 @@
                 <div class="md:col-span-1 flex justify-center">
                     <img 
                         src="ChatGPT Image Oct 22, 2025, 01_28_32 AM.png" 
-                        alt="Profile Picture" 
+                        alt="Profile Picture of Justin Salim" 
                         class="w-64 h-80 object-cover rounded-xl shadow-2xl border-4 border-indigo-400 transform transition duration-500 hover:scale-105"
                         onerror="this.src='https://placehold.co/300x400/8b5cf6/ffffff?text=Profile+Load+Error'"
                     >
@@ -107,21 +125,38 @@
                 
                 <!-- Right Column: Text Content -->
                 <div class="md:col-span-2 space-y-6 text-gray-700 text-lg leading-relaxed">
+                    
+                    <!-- PARAGRAF BIO NARRATIVE -->
+                    <p class="text-xl font-bold text-purple-700">My Narrative</p>
                     <p>
-                        Halo! Saya **Justin Salim**, seorang [Desainer/Developer/Fotografer] dengan fokus pada pembuatan solusi digital yang menarik dan fungsional. Saya percaya bahwa desain yang efektif adalah perpaduan harmonis antara estetika visual dan pengalaman pengguna yang mulus.
+                        I'm **Justin Salim**, a second-year student at **KCG (Kyoto Computer Gakuin)**, driven by the fusion of **Web/App Development and Artificial Intelligence (AI)**. I established this portfolio to document my technical growth and showcase my projects. My commitment is to **continuous learning**, disciplined practice, and applying my knowledge to build useful digital solutions.
                     </p>
                     <p>
-                        Sejak tahun [Tahun], saya telah bekerja di [Bidang Spesialisasi], mengerjakan berbagai proyek mulai dari pengembangan web skala kecil hingga aplikasi perusahaan yang kompleks.
+                        My coding journey began in **2022**. Currently, I'm balancing full-time studies with part-time work to support my life in Kyoto, dedicating my focus to coding, design, and personal development (including Buddhism). This balance ensures strong practical work experience alongside technical learning.
                     </p>
                     <p class="font-semibold text-gray-800">
-                        Moto saya: **"Desain adalah untuk menyelesaikan masalah, bukan sekadar menghiasinya."** Mari kita berkolaborasi untuk mewujudkan ide Anda.
+                        My primary goal is deep proficiency in **full-stack development**, achieving mastery in frameworks like **React.js**, and exploring strategies for project monetization, such as **AdSense**. I am eager to collaborate on challenging projects that accelerate my growth.
                     </p>
-                    <div class="pt-4">
-                        <!-- Tambahkan kelas scroll-link di sini juga -->
-                        <a href="#contact" class="inline-block px-8 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow-xl hover:bg-purple-700 transition duration-300 scroll-link">
-                            View My Skills
-                        </a>
-                    </div>
+                    <div class="pt-6">
+                        <p class="text-xl font-bold text-purple-700 mb-4">Core Tech Stack & Exposure</p>
+        <div class="flex flex-wrap gap-2">
+                            <!-- Keterampilan yang solid -->
+                            <span class="skill-badge bg-indigo-500 text-white hover:bg-indigo-600">HTML</span>
+                            <span class="skill-badge bg-indigo-500 text-white hover:bg-indigo-600">CSS (Tailwind)</span>
+                            <span class="skill-badge bg-purple-500 text-white hover:bg-purple-600">Web/App Development</span>
+                            <span class="skill-badge bg-purple-500 text-white hover:bg-purple-600">AI Concepts</span>
+                            
+                            <!-- Keterampilan yang pernah dipelajari / target -->
+                            <span class="skill-badge">JavaScript (Basic)</span>
+                            <span class="skill-badge">Python (Basic)</span>
+                            <span class="skill-badge">PHP (Basic)</span>
+                            <span class="skill-badge">Java (Basic)</span>
+                            
+                            <!-- Keterampilan target -->
+                            <span class="skill-badge bg-red-500 text-white hover:bg-red-600">React.js (Target)</span>
+                            <span class="skill-badge">AdSense Integration</span>
+                            <span class="skill-badge">UI/UX Design</span>
+                        </div>
                 </div>
             </div>
         </section>
@@ -165,7 +200,7 @@
                 <p class="text-xl text-gray-600 mb-10">
                     Hubungi saya untuk mendiskusikan ide Anda, penawaran proyek, atau hanya untuk sekedar menyapa.
                 </p>
-                <a href="mailto:justin.salim@example.com" class="inline-block px-12 py-4 bg-purple-600 text-white text-lg font-semibold rounded-lg shadow-xl hover:bg-purple-700 transition duration-300 transform hover:scale-105 scroll-link">
+                <a href="mailto:justin.salim0011@gmail.com" class="inline-block px-12 py-4 bg-purple-600 text-white text-lg font-semibold rounded-lg shadow-xl hover:bg-purple-700 transition duration-300 transform hover:scale-105 scroll-link">
                     Email Me Now
                 </a>
             </div>
@@ -176,7 +211,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 py-8 px-4 sm:px-6 lg:px-8 mt-12">
         <div class="max-w-7xl mx-auto text-center text-gray-400">
-            <p>&copy; 2024 Limer Portfolio. All rights reserved.</p>
+            <p>&copy; 2025 Justin Salim Portfolio. All rights reserved.</p>
         </div>
     </footer>
 
